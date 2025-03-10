@@ -27,9 +27,5 @@ def find_shortest_path(G: nx.Graph, source: int, target: int) -> list[int]:
 
 #6
 def visualize_graph(G: nx.Graph) -> None:
-    plt.figure(figsize=(8, 6))
-    pos = nx.spring_layout(G) 
-    nx.draw(G, pos, with_labels=True, node_color='skyblue', edge_color='gray', node_size=2000, font_size=12)
-
     plt.savefig("graph_visualization.png")
     plt.show()
