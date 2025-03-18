@@ -26,8 +26,6 @@ def find_shortest_path(G: nx.Graph, source: int, target: int) -> list[int]:
     return nx.shortest_path(G, source=source, target=target)
 
 #6
-import matplotlib.pyplot as plt
-
 def visualize_graph(G: nx.Graph) -> None:
     plt.figure(figsize=(8, 6))
     pos = nx.spring_layout(G)
